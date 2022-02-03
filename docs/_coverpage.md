@@ -11,7 +11,7 @@
 
 <!-- 链接为#main时，跳转的是当前页面 -->
 <!-- [Demo Sandbox](https://codesandbox.io/s/xv36w4695o) -->
-[<i class="iconfont icon-github"></i> GitHub](https://github.com/yuyuwork/docsify-blog)
+[<i class="iconfont icon-github"></i> Gitee](https://gitee.com/zhantu/docsify-blog.git)
 [Get Start <i class="iconfont icon-down"></i>](README.md)
 
 <!-- background image -->

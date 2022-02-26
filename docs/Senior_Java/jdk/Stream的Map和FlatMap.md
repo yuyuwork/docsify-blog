@@ -26,7 +26,7 @@ totalList.stream().distinct().forEach(System.out::println);
 
 2. flatMap将原有Stream中的元素进行转化为新的子Stream集合，同时对子Stream中的元素进行“跨级”处理，原有的Stream通过一次flatMap之后得到的不是各个子Stream的集合，而是各个子Steam集合中的元素的总集合，也就是对各个子Stream结合进行二次遍历取出中的元素，融合到一个总集合中得到的Stream中的元素与原Stream中的元素是“祖孙关系”
 
-![](https://gitee.com/zhantu/picture-bed/raw/master/repository/technology-blog/blog-library/54.png)
+![](https://gitee.com/zhantu/picture-bed/raw/master/repository/technology-blog/blog-library/55.png)
 
 ```java
 //通过flatMap方法

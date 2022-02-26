@@ -5,7 +5,7 @@
 
 ### 求和运算 <!-- {docsify-ignore} -->
 
-**使用 for 循环的简单求和运算**
+使用 for 循环的简单求和运算
 
 ```java
 int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
@@ -18,7 +18,7 @@ for (int i : numbers) {
 System.out.println("sum : " + sum); // 55
 ```
 
-**相当于 Stream.reduce()**
+相当于 Stream.reduce()
 
 ```java
 int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};

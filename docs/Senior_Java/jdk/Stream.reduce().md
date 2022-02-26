@@ -67,21 +67,24 @@ int reduce(int identity, IntBinaryOperator op);
 long reduce(int identity, LongBinaryOperator op);
 ```
 
-● identity = 默认值或初始值
-● BinaryOperator = 函数式接口，取两个值并产生一个新值。（注： java Function 函数中的 BinaryOperator 接口用于执行 lambda 表达式并返回一个 T 类型的返回值）
+- identity = 默认值或初始值
+- BinaryOperator = 函数式接口，取两个值并产生一个新值。（注： java Function 函数中的 BinaryOperator 接口用于执行 lambda 表达式并返回一个 T 类型的返回值）
 
 
 ```java
-//Stream.java  如果缺少identity参数，则没有默认值或初始值，并且它返回 optional
+//Stream.java
 Optional<T> reduce(BinaryOperator<T> accumulator);
+
+//如果缺少identity参数，则没有默认值或初始值，并且它返回 optional
 ```
 
 <br/>
 
 **更多使用示例**
 
+**1、数学运算**
+
 ```java
-//1 数学运算
 int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
  
 int sum = Arrays.stream(numbers).reduce(0, (a, b) -> a + b);    // 55
@@ -90,8 +93,11 @@ int sum2 = Arrays.stream(numbers).reduce(0, Integer::sum);      // 55
 int sum3 = Arrays.stream(numbers).reduce(0, (a, b) -> a - b);   // -55
 int sum4 = Arrays.stream(numbers).reduce(0, (a, b) -> a * b);   // 0, initial is 0, 0 * whatever = 0
 int sum5 = Arrays.stream(numbers).reduce(0, (a, b) -> a / b);   // 0
+```
 
-//2 最大和最小
+**2、最大和最小值**
+
+```java
 int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
  
 int max = Arrays.stream(numbers).reduce(0, (a, b) -> a > b ? a : b);  // 10
@@ -99,8 +105,11 @@ int max1 = Arrays.stream(numbers).reduce(0, Integer::max);            // 10
  
 int min = Arrays.stream(numbers).reduce(0, (a, b) -> a < b ? a : b);  // 0
 int min1 = Arrays.stream(numbers).reduce(0, Integer::min);            // 0
+```
 
-//3 连接字符串
+**3、连接字符串**
+
+```java
 String[] strings = {"a", "b", "c", "d", "e"};
  
 // |a|b|c|d|e , the initial | join is not what we want
@@ -119,7 +128,8 @@ String reduce2 = Arrays.stream(strings).reduce("", (a, b) -> {
 String join = String.join("|", strings);
 ```
 
-3. Map & Reduce
+**4、Map & Reduce**
+
 一个简单的 map 和 reduce 示例，用于从发票 List 中求 BigDecimal 的和
 
 ```java

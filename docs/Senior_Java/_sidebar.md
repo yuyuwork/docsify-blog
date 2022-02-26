@@ -1,5 +1,5 @@
 
 * [Senior Java](/Senior_Java/)
-    - Jdk Stream
-        - [Jdk Stream](/Senior_Java/jdk/Stream.reduce().md)
+    - [Jdk Stream](/Senior_Java/jdk/)
+        - [Stream.reduce()合并流](/Senior_Java/jdk/Stream.reduce().md)
 

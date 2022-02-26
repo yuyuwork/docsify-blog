@@ -1,5 +1,5 @@
 
-* [Spring Boot](/springboot/)
-    - [Spring Boot集成Swagger](/springboot/spring-boot-swagger.md)
+* [Spring Boot](/Spring_Boot/)
+    - [Spring Boot集成Swagger](/Spring_Boot/spring-boot-swagger.md)
 
 

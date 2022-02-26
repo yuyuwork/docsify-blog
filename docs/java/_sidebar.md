@@ -1,4 +1,0 @@
-
-* [Senior Java](/java/)
-
-

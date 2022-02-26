@@ -1,8 +1,8 @@
 
 - 🏡[Home](/README.md)
-- ☕[Senior Java](/java/)
+- ☕[Senior Java](/Senior_Java/)
 - 🍃Sprig Framework
-    - [Spring Boot](/springboot/)
+    - [Spring Boot](/Spring_Boot/)
 
 
 
